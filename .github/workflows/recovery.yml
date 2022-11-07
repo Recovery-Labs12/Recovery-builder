@@ -6,18 +6,18 @@ on:
       ManifestLink:
         description: 'Link For Minimal Recovery Manifest'
         required: true
-        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp'
+        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni -b twrp-10.0'
       ManifestBranch:
-        description: 'Which Branch Would You Like To Sync'
+        description: 'twrp-10.0'
         required: true
       DTLink:
-        description: 'Link For Your Device Tree With Branch Like URL -b BRANCH'
+        description: 'https://github.com/Mikesew1320/TECNO-CD6-TWRP-Tree -b android-10.0'
         required: true
       Vendor:
-        description: 'Enter Your Device OEM'
+        description: 'TECNO'
         required: true
       Device:
-        description: 'Enter Your Device Code Name'
+        description: 'CD6'
         required: true
       KernelLink:
         description: 'Link For Your Kernel Source With Branch Like URL -b BRANCH'
