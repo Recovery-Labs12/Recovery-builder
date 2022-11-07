@@ -6,7 +6,7 @@ on:
       ManifestLink:
         description: 'Link For Minimal Recovery Manifest'
         required: true
-        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni'
+        default: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni -b twrp-9.0'
       ManifestBranch:
         description: 'twrp-10.0'
         required: true
