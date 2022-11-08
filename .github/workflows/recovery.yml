@@ -75,9 +75,16 @@ jobs:
               cd work
               . build/envsetup.sh && $LUNCHCMD && export ALLOW_MISSING_DEPENDENCIES=true && $BUILDCMD
              
-       - name: Uploading recovery image
+            
+          
+       
+       - name: Release Builds 
          run: |
-              cd work/out/target/product/$DEVICE
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer wet recovery.img
-              ./transfer wet *.zip
+              sudo apt-get update && sudo apt-get install sshpass -y
+              cd $BuildPath 
+              bash vendor/utils/pb_deploy.sh ${BUILD_RELEASE_TYPE} ${VENDOR} ${CODENAME}
+         
+             
+          
+             
+            
